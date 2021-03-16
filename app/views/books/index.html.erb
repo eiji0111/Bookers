@@ -1,0 +1,15 @@
+<h1>Books</h1>
+<%= form_with model:bookres,local do |f| %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+  <tr>
+    <td><%= t.text_field:title %></td>
+    <td><%= t.text_field:body %></td>
+    <td><%= %></td>
+    <td><%= %></td>
+    <td><%= %></td>
+  </tr>
+</table>
