@@ -1,9 +1,13 @@
 <h1 class="edit-title">Editing Book</h1>
 <%= form_with model:@book,local:true do |f| %>
-<h4>Title</h4>
+<%= f.label:title,"Title" %>
+<div>
 <%= f.text_field:title %>
-<h4>Body</h4>
+</div>
+<%= f.label:body,"Body" %>
+<div>
 <%= f.text_area:body %>
+</div>
 <div>
 <%= f.submit 'Update Book' %>
 </div>
