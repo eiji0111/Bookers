@@ -102,3 +102,25 @@ a:hover {
 .edit-title {
     font-size: 25px;
 }
+
+ /* エラーメッセージ
+ ================================ */
+#error_explanation p {
+    color: #fff;
+    width: 450px;
+    background-color: #c00;
+    text-align: center;
+    font-size: 15px;
+}
+.alert {
+    width: 454px;
+    border: 2px solid red;
+}
+ul {
+    padding: 40px;
+    background-color: #f0f0f0;
+}
+li {
+    font-size: 13px;
+    list-style: none;
+}

@@ -1,4 +1,16 @@
 <h1 class="edit-title">Editing Book</h1>
+
+  <% if @book.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger">
+      <p><%= pluralize(@book.errors.count, "error") %> errors prohibited this book from being saved:</p>
+      <ul>
+        <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
 <%= form_with model:@book,local:true do |f| %>
 <%= f.label:title,"Title" %>
 <div>
